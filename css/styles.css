@@ -82,6 +82,7 @@ ul {
 .header-contacts a:hover,
 .header-contacts a:focus {
   color: var(--text-color-accent);
+  fill: var(--text-color-accent);
 }
 
 .header-contacts li {
@@ -95,6 +96,9 @@ ul {
   color: #ffffff;
   background-color: var(--background-color-accent);
   text-align: center;
+  max-width: 1600px;
+  background-image: linear-gradient(to right, #2f303a66, #2f303a66),
+    url(/images/intro-background.jpg);
 }
 
 .intro button {
@@ -192,7 +196,7 @@ h4 {
   letter-spacing: 0.03em;
 }
 
-.footer-content {
+.footer-text {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -377,4 +381,142 @@ figcaption {
 .gallery p {
   margin: 4px 0px 0px 0px;
   letter-spacing: 0.03em;
+}
+
+.contact-icons-header {
+  display: inline;
+  margin-left: auto;
+  margin-right: 10px;
+  fill: var(--text-color-sub);
+  vertical-align: middle;
+}
+
+/* .contact-icons-header:hover,
+.contact-icons-header:focus {
+  fill: var(--text-color-accent);
+} */
+
+.what-we-do-icons {
+  display: inline;
+  fill: var(--text-color-main);
+}
+
+.our-clients {
+  background-color: var(--background-color-main);
+  padding-left: auto;
+  padding-right: auto;
+}
+
+.client-list {
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.client-list li {
+  width: 172px;
+  padding: 17.71px 32px 14.25px 32px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.company-logo {
+  fill: #afb1b8;
+}
+
+.client-list-tile:hover,
+.client-list-tile:focus {
+  fill: var(--text-color-accent);
+  border-color: var(--text-color-accent);
+}
+
+/* .client-list-tile:hover {
+  border-color: var(--text-color-accent);
+} */
+
+/* .social-media-personal {
+  display: flex;
+  gap: 10px;
+  fill: #afb1b8;
+  justify-content: center;
+  padding-left: auto;
+  padding-right: auto;
+  vertical-align: middle;
+  margin-right: 10px;
+} */
+
+/* .social-media-logo-background {
+  width: 44;
+  height: 44;
+  stroke: none;
+  stroke-width: 0;
+  fill: none;
+  margin-top: 16px;
+  margin-bottom: 30px;
+} */
+
+.social-media-logo {
+  /* fill: #afb1b8; */
+  fill: pink;
+  padding: 12px;
+}
+
+.social-media-logo-background svg:hover {
+  fill: var(--button-color);
+}
+
+.our-team-members li {
+  fill: var(--button-color);
+}
+
+.what-we-do-icons svg {
+  fill: #212121;
+}
+
+.team-member-card {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.join-us p {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.join-us {
+  margin-top: 72px;
+  margin-left: 70px;
+}
+
+footer > .container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.join-us-socials {
+  list-style-type: none;
+  fill: #ffffff;
+  display: flex;
+  gap: 10px;
+  padding: 12px;
+}
+
+/* .join-us-socials {
+  border-radius: 44px;
+  border-color: pink;
+  border-width: 44px;
+} */
+
+.join-us-socials li:hover,
+.join-us-socials li:focus {
+  border-radius: 44px;
+  color: var(--button-color);
+  border-color: var(--button-color);
 }
