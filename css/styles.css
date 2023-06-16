@@ -244,8 +244,6 @@ footer {
   border: 0;
   padding: 6px 22px;
   border-radius: 4px;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-filter button:hover,
@@ -316,6 +314,7 @@ footer {
   list-style-type: none;
   display: flex;
   gap: 30px;
+  justify-content: space-between;
 }
 
 .our-team-members {
@@ -357,7 +356,6 @@ footer {
   padding: unset;
   margin: unset;
   display: block;
-  /* border: 1px solid #eeeeee; */
 }
 
 img {
@@ -385,11 +383,6 @@ figcaption {
   fill: var(--text-color-sub);
   vertical-align: middle;
 }
-
-/* .contact-icons-header:hover,
-.contact-icons-header:focus {
-  fill: var(--text-color-accent);
-} */
 
 .what-we-do-icons {
   display: inline;
@@ -493,8 +486,15 @@ footer > .container {
 }
 
 .social-media-logo-footer a {
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  border-color: pink;
+  display: flex;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding-top: 12px;
+  cursor: pointer;
+  fill: #ffffff;
 }
 
 .icons-background {
@@ -526,4 +526,26 @@ footer > .container {
   background: var(--button-color);
   fill: #ffffff;
   cursor: pointer;
+}
+
+.social-media-logo-dark {
+  fill: #ffffff;
+}
+
+.social-media-logo-footer a:hover,
+.social-media-logo-footer a:focus {
+  background: var(--button-color);
+}
+
+.gallery li:hover,
+.gallery li:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+}
+
+.portfolio-buttons li:hover {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
