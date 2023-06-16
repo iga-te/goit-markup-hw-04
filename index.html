@@ -71,34 +71,19 @@
       </div>
     </header>
     <main>
-      <div class="intro section">
+      <section class="intro section">
         <div class="container">
-          <h1>EFEKTYWNE ROZWIĄZANIA <br />DLA WASZEGO BIZNESU</h1>
+          <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
           <button type="button">Zamów usługe</button>
         </div>
-      </div>
-      <div class="what-we-do section">
+      </section>
+      <section class="what-we-do section">
         <div class="container">
           <ul class="what-we-do-list">
             <li>
-              <div>
-                <svg
-                  class="what-we-do-icons"
-                  width="65.32"
-                  height="70"
-                  display="inline-block"
-                >
-                  <use href=".images/icons.svg#icon-antenna-1"></use>
-                </svg>
-                <svg>
-                  <rect
-                    width="270"
-                    height="120"
-                    fill="#F5F4FA"
-                    x="0"
-                    y="0"
-                    rx="4"
-                  />
+              <div class="icons-background">
+                <svg class="what-we-do-icons" width="70" height="70">
+                  <use href="./images/icons.svg#icon-antenna-1"></use>
                 </svg>
               </div>
               <h3>LOREM IPSUM</h3>
@@ -108,25 +93,9 @@
               </p>
             </li>
             <li>
-              <div>
-                <svg>
-                  <rect
-                    width="270"
-                    height="120"
-                    fill="#F5F4FA"
-                    x="0"
-                    y="0"
-                    rx="4"
-                  />
-                </svg>
-                <svg>
-                  <use
-                    href=".images/icons.svg#icon-clock-1"
-                    width="65.32"
-                    height="70"
-                    display="inline-block"
-                    fill="black"
-                  ></use>
+              <div class="icons-background">
+                <svg class="what-we-do-icons" width="70" height="70">
+                  <use href="./images/icons.svg#icon-clock-1"></use>
                 </svg>
               </div>
               <h3>LOREM IPSUM</h3>
@@ -136,6 +105,11 @@
               </p>
             </li>
             <li>
+              <div class="icons-background">
+                <svg class="what-we-do-icons" width="70" height="70">
+                  <use href="./images/icons.svg#icon-diagram-1"></use>
+                </svg>
+              </div>
               <h3>LOREM IPSUM</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
@@ -143,6 +117,11 @@
               </p>
             </li>
             <li>
+              <div class="icons-background">
+                <svg class="what-we-do-icons" width="70" height="70">
+                  <use href="./images/icons.svg#icon-astronaut-1"></use>
+                </svg>
+              </div>
               <h3>LOREM IPSUM</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
@@ -150,6 +129,10 @@
               </p>
             </li>
           </ul>
+        </div>
+      </section>
+      <section class="what-we-do-pics">
+        <div class="container">
           <h2>Czym się zajmujemy</h2>
           <ul class="what-we-do-visual">
             <li>
@@ -178,8 +161,8 @@
             </li>
           </ul>
         </div>
-      </div>
-      <div class="our-team section">
+      </section>
+      <section class="our-team section">
         <div class="container">
           <h2>Nasz zespół</h2>
           <ul class="our-team-members">
@@ -192,38 +175,36 @@
               />
               <p class="team-name">John Doe</p>
               <p class="team-job">Product Designer</p>
-              <div class="social-media-personal">
-                <svg width="44" height="44" style="none">
-                  <circle
-                    class="social-media-logo-background"
-                    r="22"
-                    cx="22"
-                    cy="22"
-                    stroke="none"
-                    stroke-width="0"
-                    vertical-align="middle"
-                    fill="none"
-                  />
-                  <use
-                    class="social-media-logo"
-                    href="./images/icons.svg#icon-instagram-2"
-                    width="20"
-                    height="20"
-                    x="12"
-                    y="12"
-                    fill="#afb1b8"
-                  ></use>
-                </svg>
-                <svg class="social-media-logo" width="20" height="16.25">
-                  <use href="./images/icons.svg#icon-twitter-1"></use>
-                </svg>
-                <svg class="social-media-logo" width="10" height="20">
-                  <use href="./images/icons.svg#icon-facebook-1"></use>
-                </svg>
-                <svg class="social-media-logo" width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin-1"></use>
-                </svg>
-              </div>
+              <ul class="social-media-personal">
+                <li>
+                  <a class="social-media-logo-border">
+                    <svg class="social-media-logo" width="20" height="20">
+                      <use href="./images/icons.svg#icon-instagram-2"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="social-media-logo-border">
+                    <svg class="social-media-logo" width="20" height="20">
+                      <use href="./images/icons.svg#icon-twitter-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="social-media-logo-border">
+                    <svg class="social-media-logo" width="20" height="20">
+                      <use href="./images/icons.svg#icon-facebook-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="social-media-logo-border">
+                    <svg class="social-media-logo" width="20" height="20">
+                      <use href="./images/icons.svg#icon-linkedin-1"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </li>
             <li class="team-member-card">
               <img
@@ -234,22 +215,36 @@
               />
               <p class="team-name">John Doe</p>
               <p class="team-job">Frontend Developer</p>
-              <svg width="44" height="44">
-                <circle
-                  class="social-media-logo-background"
-                  r="22"
-                  cx="22"
-                  cy="22"
-                ></circle>
-                <use
-                  href="./images/icons.svg#icon-instagram-2"
-                  height="20"
-                  weight="20"
-                  fill="#afb1b8"
-                  x="0"
-                  y="12"
-                ></use>
-              </svg>
+              <ul class="social-media-personal">
+                <li>
+                  <a class="social-media-logo-border">
+                    <svg class="social-media-logo" width="20" height="20">
+                      <use href="./images/icons.svg#icon-instagram-2"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="social-media-logo-border">
+                    <svg class="social-media-logo" width="20" height="20">
+                      <use href="./images/icons.svg#icon-twitter-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="social-media-logo-border">
+                    <svg class="social-media-logo" width="20" height="20">
+                      <use href="./images/icons.svg#icon-facebook-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="social-media-logo-border">
+                    <svg class="social-media-logo" width="20" height="20">
+                      <use href="./images/icons.svg#icon-linkedin-1"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </li>
             <li class="team-member-card">
               <img
@@ -260,6 +255,36 @@
               />
               <p class="team-name">John Doe</p>
               <p class="team-job">Marketing</p>
+              <ul class="social-media-personal">
+                <li>
+                  <a class="social-media-logo-border">
+                    <svg class="social-media-logo" width="20" height="20">
+                      <use href="./images/icons.svg#icon-instagram-2"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="social-media-logo-border">
+                    <svg class="social-media-logo" width="20" height="20">
+                      <use href="./images/icons.svg#icon-twitter-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="social-media-logo-border">
+                    <svg class="social-media-logo" width="20" height="20">
+                      <use href="./images/icons.svg#icon-facebook-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="social-media-logo-border">
+                    <svg class="social-media-logo" width="20" height="20">
+                      <use href="./images/icons.svg#icon-linkedin-1"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </li>
             <li class="team-member-card">
               <img
@@ -270,33 +295,71 @@
               />
               <p class="team-name">John Doe</p>
               <p class="team-job">UI Designer</p>
+              <ul class="social-media-personal">
+                <li>
+                  <a class="social-media-logo-border">
+                    <svg class="social-media-logo" width="20" height="20">
+                      <use href="./images/icons.svg#icon-instagram-2"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="social-media-logo-border">
+                    <svg class="social-media-logo" width="20" height="20">
+                      <use href="./images/icons.svg#icon-twitter-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="social-media-logo-border">
+                    <svg class="social-media-logo" width="20" height="20">
+                      <use href="./images/icons.svg#icon-facebook-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="social-media-logo-border">
+                    <svg class="social-media-logo" width="20" height="20">
+                      <use href="./images/icons.svg#icon-linkedin-1"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
-      </div>
-      <div class="our-clients section">
+      </section>
+      <section class="our-clients section">
         <div class="container">
           <h2>Nasi klienci</h2>
           <ul class="client-list">
-            <li class="client-list-tile">
-              <svg class="company-logo" width="106" height="60.04">
-                <use href="./images/icons.svg#icon-logo-1"></use>
-              </svg>
+            <li>
+              <a class="client-list-tile">
+                <svg class="company-logo" width="106" height="60.04">
+                  <use href="./images/icons.svg#icon-logo-1"></use>
+                </svg>
+              </a>
             </li>
             <li>
-              <svg class="company-logo" width="106" height="60.04">
-                <use href="./images/icons.svg#icon-logo-2"></use>
-              </svg>
+              <a class="client-list-tile">
+                <svg class="company-logo" width="106" height="60.04">
+                  <use href="./images/icons.svg#icon-logo-2"></use>
+                </svg>
+              </a>
             </li>
             <li>
-              <svg class="company-logo" width="106" height="60.04">
-                <use href="./images/icons.svg#icon-logo-3"></use>
-              </svg>
+              <a class="client-list-tile">
+                <svg class="company-logo" width="106" height="60.04">
+                  <use href="./images/icons.svg#icon-logo-3"></use>
+                </svg>
+              </a>
             </li>
             <li>
-              <svg class="company-logo" width="106" height="60.04">
-                <use href="./images/icons.svg#icon-logo-4"></use>
-              </svg>
+              <a class="client-list-tile">
+                <svg class="company-logo" width="106" height="60.04">
+                  <use href="./images/icons.svg#icon-logo-4"></use>
+                </svg>
+              </a>
             </li>
             <li>
               <svg class="company-logo" width="106" height="60.04">
@@ -304,13 +367,15 @@
               </svg>
             </li>
             <li>
-              <svg class="company-logo" width="106" height="60.04">
-                <use href="./images/icons.svg#icon-logo-6"></use>
-              </svg>
+              <a class="client-list-tile">
+                <svg class="company-logo" width="106" height="60.04">
+                  <use href="./images/icons.svg#icon-logo-6"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
-      </div>
+      </section>
     </main>
     <footer class="footer-content">
       <div class="container">
@@ -329,89 +394,33 @@
         <div class="join-us">
           <p>Dołącz do nas</p>
           <ul class="join-us-socials">
-            <li>
-              <svg width="44" height="44">
-                <circle
-                  class="social-media-logo-background-footer"
-                  r="22"
-                  cx="22"
-                  cy="22"
-                  stroke="none"
-                  stroke-width="0"
-                  fill="rgba(255, 255, 255, 0.1)"
-                />
-                <use
-                  href="./images/icons.svg#icon-instagram-2"
-                  target="_self"
-                  width="20"
-                  height="20"
-                  x="12"
-                  y="12"
-                ></use>
-              </svg>
+            <li class="social-media-logo-footer">
+              <a>
+                <svg class="social-media-logo" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
             </li>
             <li>
-              <svg>
-                <circle
-                  class="social-media-logo-background-footer"
-                  r="22"
-                  cx="22"
-                  cy="22"
-                  stroke="none"
-                  stroke-width="0"
-                  fill="rgba(255, 255, 255, 0.1)"
-                />
-                <use
-                  href="./images/icons.svg#icon-twitter-1"
-                  target="_self"
-                  width="20"
-                  height="16.25"
-                  x="12"
-                  y="13.88"
-                ></use>
-              </svg>
+              <a>
+                <svg class="social-media-logo" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
             </li>
             <li>
-              <svg>
-                <circle
-                  class="social-media-logo-background-footer"
-                  r="22"
-                  cx="22"
-                  cy="22"
-                  stroke="none"
-                  stroke-width="0"
-                  fill="rgba(255, 255, 255, 0.1)"
-                />
-                <use
-                  href="./images/icons.svg#icon-facebook-1"
-                  target="_self"
-                  width="10"
-                  height="20"
-                  x="12"
-                  y="17.16"
-                ></use>
-              </svg>
+              <a>
+                <svg class="social-media-logo" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
             </li>
             <li>
-              <svg>
-                <circle
-                  class="social-media-logo-background-footer"
-                  r="22"
-                  cx="22"
-                  cy="22"
-                  stroke="none"
-                  stroke-width="0"
-                  fill="rgba(255, 255, 255, 0.1)"
-                />
-                <use
-                  href="./images/icons.svg#icon-linkedin-1"
-                  target="_self"
-                  width="20"
-                  height="20"
-                  x="12"
-                  y="12"
-                ></use>
-              </svg>
+              <a>
+                <svg class="social-media-logo" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
