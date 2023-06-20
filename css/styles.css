@@ -424,13 +424,6 @@ figcaption {
   fill: #afb1b8;
 }
 
-/* .client-list-tile:hover,
-.client-list-tile:focus {
-  fill: var(--text-color-accent);
-  border-color: var(--text-color-accent);
-  cursor: pointer;
-} */
-
 .social-media-personal {
   display: flex;
   gap: 10px;
@@ -439,10 +432,6 @@ figcaption {
   padding-right: auto;
   vertical-align: middle;
 }
-
-/* .social-media-logo-background svg:hover {
-  fill: var(--button-color);
-} */
 
 .our-team-members li {
   fill: var(--button-color);
@@ -526,6 +515,13 @@ footer > .container {
   background: var(--button-color);
   fill: #ffffff;
   cursor: pointer;
+}
+
+.social-media-logo-border:hover,
+.social-media-logo-border:focus,
+.social-media-logo:hover,
+.social-media-logo:focus {
+  fill: #ffffff;
 }
 
 .social-media-logo-dark {
